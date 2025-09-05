@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Top 10 IT Skills in 2025",
+    "thumbnail": "https://via.placeholder.com/400x200?text=IT+Skills",
+    "description": "Discover the top 10 IT skills that will dominate the job market in 2025."
+  },
+  {
+    "id": 2,
+    "title": "Remote Work Trends",
+    "thumbnail": "https://via.placeholder.com/400x200?text=Remote+Work",
+    "description": "Explore how remote work is shaping the future of employment worldwide."
+  },
+  {
+    "id": 3,
+    "title": "Tips for Writing a Great Resume",
+    "thumbnail": "https://via.placeholder.com/400x200?text=Resume+Tips",
+    "description": "Improve your chances with practical resume writing advice."
+  }
+]

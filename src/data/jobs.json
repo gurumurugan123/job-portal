@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Frontend Developer",
+    "company": "Tech Corp",
+    "location": "New York, USA",
+    "salary": "$80,000 - $100,000",
+    "type": "IT"
+  },
+  {
+    "id": 2,
+    "title": "Backend Engineer",
+    "company": "Global Solutions",
+    "location": "London, UK",
+    "salary": "£70,000 - £90,000",
+    "type": "World"
+  },
+  {
+    "id": 3,
+    "title": "Fullstack Developer",
+    "company": "Innovatech",
+    "location": "San Francisco, USA",
+    "salary": "$90,000 - $110,000",
+    "type": "IT"
+  },
+  {
+    "id": 4,
+    "title": "Cloud Architect",
+    "company": "Cloudify",
+    "location": "Berlin, Germany",
+    "salary": "€85,000 - €105,000",
+    "type": "World"
+  },
+  {
+    "id": 5,
+    "title": "Data Scientist",
+    "company": "DataX",
+    "location": "Seattle, USA",
+    "salary": "$95,000 - $120,000",
+    "type": "IT"
+  }
+]
