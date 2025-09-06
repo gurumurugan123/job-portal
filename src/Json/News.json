@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "title": "Tech Giants Face Regulators",
+    "type": "News",
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+    "date": "2025-09-06",
+    "details": {
+      "overview": "France fined Google €325M and Shein €150M for privacy violations. A U.S. court ruled that Google must share some search data with competitors.",
+      "content": "Major regulatory actions are shaping digital advertising as authorities push for fairness and improved privacy compliance in tech.",
+      "source": "TS2 Space",
+      "link": "https://ts2.tech/en/global-tech-news-roundup-sept-3-4-2025-fines-launches-big-tech-moves/"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Major Investments in AI Infrastructure",
+    "type": "News",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+    "date": "2025-09-05",
+    "details": {
+      "overview": "Google is investing $9B in new AI data centers in Oklahoma. Allen Institute for AI secured $152M for an open-source scientific AI platform.",
+      "content": "These investments mark a growing commitment among tech leaders to expand AI research and infrastructure.",
+      "source": "Crescendo AI",
+      "link": "https://www.crescendo.ai/news/latest-ai-news-and-updates"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Cyber Threats Escalate",
+    "type": "News",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+    "date": "2025-09-04",
+    "details": {
+      "overview": "Cloudflare blocked an 11.5 Tbps DDoS attack, highlighting a rise in global cyber threats; convergence of AI and blockchain strengthens defenses.",
+      "content": "Enterprises are adopting advanced AI models and blockchain integration to detect threats in real time.",
+      "source": "GOV.UK",
+      "link": "https://www.gov.uk/government/publications/emerging-technology-pairings-and-their-effects-on-cyber-security/emerging-technologies-and-their-effect-on-cyber-security"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Remote Work and Tech Hiring Trends",
+    "type": "News",
+    "image": "https://images.unsplash.com/photo-1482062364825-616fd23b8fc1",
+    "date": "2025-09-03",
+    "details": {
+      "overview": "Hybrid work models continue to expand, while the IT sector experiences a 24% drop in new job openings and major U.S. layoffs.",
+      "content": "Tech companies are restructuring talent strategies to balance remote productivity and cost management.",
+      "source": "Outlook Business",
+      "link": "https://www.outlookbusiness.com/corporate/tech-hiring-slowdown-it-sector-to-witness-24-drop-in-new-job-openings-in-september"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Enterprise AI Funding Surges",
+    "type": "News",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+    "date": "2025-09-02",
+    "details": {
+      "overview": "Enterprise AI startup Cohere raises $500M to expand its solutions and global presence.",
+      "content": "The funding is set to accelerate adoption of generative AI models across industries, with a focus on business automation.",
+      "source": "Simplilearn",
+      "link": "https://www.simplilearn.com/top-technology-trends-and-jobs-article"
+    }
+  }
+]

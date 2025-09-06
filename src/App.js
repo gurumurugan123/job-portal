@@ -13,6 +13,11 @@ import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Disclaimer from './pages/Disclaimer';
 import About from './pages/About';
+import JobDetails from './pages/JobDetails';
+import LatestNews from './pages/News';
+import WorldJobDetails from './pages/WorldJobDetails';
+import NewsDetails from './pages/NewDetails';
+import ChannelsSection from './pages/Channecsection';
 
 function App() {
   return (
@@ -22,15 +27,19 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/jobs" element={<LatestITJobs />} />
+          <Route path="/job/:id" element={<JobDetails />} />
           <Route path="/world-jobs" element={<WorldJobs />} />
+          <Route path="/world-jobs/:id" element={<WorldJobDetails></WorldJobDetails>}/>
           <Route path="/blogs" element={<Blogs />} />
-          <Route path="/news" element={<News />} />
+          <Route path="/news" element={<LatestNews/>} />
+           <Route path="/news/:id" element={<NewsDetails />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </div>
+      <ChannelsSection/>
       <Footer />
     </Router>
   );

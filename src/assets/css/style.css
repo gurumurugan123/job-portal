@@ -18,20 +18,20 @@ a {
 }
 
 .container {
-  width: 90%;
-  max-width: 1200px;
+  /* width: 90%;
+  max-width: 1200px; */
   margin: auto;
 }
 
 /* Navbar styles */
-nav {
+/* nav {
   background-color: #0073e6;
   padding: 1rem;
   position: sticky;
   top: 0;
   z-index: 999;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
+} */
 
 nav ul {
   list-style: none;

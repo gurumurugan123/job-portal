@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "title": "Frontend Developer",
+    "type": "IT",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+    "date": "2025-09-06",
+    "applyLink": "https://www.example.com/apply/frontend-developer",
+    "details": {
+      "overview": "Create engaging front-end web interfaces and collaborate with designers and backend developers to deliver high-quality web applications.",
+      "responsibilities": [
+        "Develop responsive and interactive web applications.",
+        "Implement UI/UX designs.",
+        "Optimize for speed and scalability.",
+        "Ensure cross-browser compatibility."
+      ],
+      "qualifications": [
+        "1-3 years experience in frontend development.",
+        "Proficiency in HTML, CSS, JavaScript, React.js.",
+        "Experience with RESTful APIs.",
+        "Strong problem-solving and communication skills."
+      ],
+      "workLocation": "Remote or Office-Based",
+      "note": "Only shortlisted candidates will be contacted.",
+      "howToApply": "Submit your resume and portfolio online."
+    }
+  },
+  {
+    "id": 2,
+    "title": "Backend Developer",
+    "type": "IT",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+    "date": "2025-09-05",
+    "applyLink": "https://www.example.com/apply/backend-developer",
+    "details": {
+      "overview": "Build and maintain server-side logic, databases, and APIs to support web applications.",
+      "responsibilities": [
+        "Design scalable backend systems and APIs.",
+        "Maintain databases and data models.",
+        "Optimize application performance.",
+        "Collaborate with frontend teams."
+      ],
+      "qualifications": [
+        "2-4 years backend development experience.",
+        "Proficiency in Node.js, Python, Java, or similar.",
+        "Experience with SQL/NoSQL databases.",
+        "Good debugging and problem-solving skills."
+      ],
+      "workLocation": "Remote or Onsite",
+      "note": "Only shortlisted candidates will be contacted.",
+      "howToApply": "Submit your application with GitHub or projects link."
+    }
+  },
+  {
+    "id": 3,
+    "title": "Fullstack Developer",
+    "type": "IT",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "date": "2025-09-04",
+    "applyLink": "https://www.example.com/apply/fullstack-developer",
+    "details": {
+      "overview": "Develop end-to-end web applications combining frontend and backend expertise.",
+      "responsibilities": [
+        "Build fullstack web applications.",
+        "Implement features from requirements.",
+        "Troubleshoot and optimize code.",
+        "Ensure scalability and performance."
+      ],
+      "qualifications": [
+        "3+ years fullstack development experience.",
+        "Proficiency in React.js and Node.js.",
+        "Knowledge of SQL/NoSQL databases.",
+        "Good communication and collaboration skills."
+      ],
+      "workLocation": "Remote",
+      "note": "Shortlisted candidates will be contacted for technical rounds.",
+      "howToApply": "Apply online with resume and project links."
+    }
+  },
+  {
+    "id": 4,
+    "title": "DevOps Engineer",
+    "type": "IT",
+    "image": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61",
+    "date": "2025-09-03",
+    "applyLink": "https://www.example.com/apply/devops-engineer",
+    "details": {
+      "overview": "Automate deployments, maintain CI/CD pipelines, and ensure infrastructure reliability.",
+      "responsibilities": [
+        "Set up CI/CD pipelines.",
+        "Automate infrastructure deployment.",
+        "Monitor system performance.",
+        "Collaborate with development teams."
+      ],
+      "qualifications": [
+        "2-5 years DevOps or system administration experience.",
+        "Experience with Docker, Kubernetes, cloud services.",
+        "Proficiency in Linux/Unix.",
+        "Strong scripting skills."
+      ],
+      "workLocation": "Remote or Office",
+      "note": "Practical DevOps experience required.",
+      "howToApply": "Submit resume and CI/CD project examples."
+    }
+  },
+  {
+    "id": 5,
+    "title": "Mobile App Developer",
+    "type": "IT",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+    "date": "2025-09-02",
+    "applyLink": "https://www.example.com/apply/mobile-app-developer",
+    "details": {
+      "overview": "Develop and maintain mobile applications for Android and iOS platforms.",
+      "responsibilities": [
+        "Design and develop mobile apps.",
+        "Test and debug applications.",
+        "Collaborate with UI/UX designers.",
+        "Optimize for performance and battery life."
+      ],
+      "qualifications": [
+        "1-3 years mobile app development experience.",
+        "Knowledge of React Native, Flutter, or native tools.",
+        "Familiarity with REST APIs.",
+        "Strong problem-solving skills."
+      ],
+      "workLocation": "Remote",
+      "note": "Shortlisted candidates invited for technical test.",
+      "howToApply": "Apply with app portfolio online."
+    }
+  },
+  {
+    "id": 6,
+    "title": "UI/UX Designer",
+    "type": "IT",
+    "image": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61",
+    "date": "2025-09-01",
+    "applyLink": "https://www.example.com/apply/ui-ux-designer",
+    "details": {
+      "overview": "Create engaging and intuitive interfaces for web and mobile applications.",
+      "responsibilities": [
+        "Design wireframes and mockups.",
+        "Conduct user research and testing.",
+        "Collaborate with developers.",
+        "Ensure design consistency across platforms."
+      ],
+      "qualifications": [
+        "2+ years UI/UX design experience.",
+        "Proficiency in Figma, Adobe XD, or Sketch.",
+        "Strong design portfolio.",
+        "Good communication skills."
+      ],
+      "workLocation": "Remote or Office",
+      "note": "Portfolio submission mandatory.",
+      "howToApply": "Apply online with portfolio and resume."
+    }
+  },
+  {
+    "id": 7,
+    "title": "Data Scientist",
+    "type": "IT",
+    "image": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61",
+    "date": "2025-08-31",
+    "applyLink": "https://www.example.com/apply/data-scientist",
+    "details": {
+      "overview": "Analyze data and build predictive models to support business decisions.",
+      "responsibilities": [
+        "Collect, clean, analyze data.",
+        "Build and validate models.",
+        "Visualize and present insights.",
+        "Collaborate to define key metrics."
+      ],
+      "qualifications": [
+        "2-4 years data science experience.",
+        "Proficiency in Python, R, or SQL.",
+        "Experience with ML algorithms and visualization.",
+        "Strong analytical skills."
+      ],
+      "workLocation": "Remote",
+      "note": "Candidates may solve data problem during selection.",
+      "howToApply": "Submit resume and project portfolio."
+    }
+  },
+  {
+    "id": 8,
+    "title": "Machine Learning Engineer",
+    "type": "IT",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+    "date": "2025-08-30",
+    "applyLink": "https://www.example.com/apply/machine-learning-engineer",
+    "details": {
+      "overview": "Design, train, and deploy machine learning models for practical applications.",
+      "responsibilities": [
+        "Develop ML models and algorithms.",
+        "Train, test, validate models.",
+        "Deploy models to production.",
+        "Collaborate with data engineers and developers."
+      ],
+      "qualifications": [
+        "2-5 years ML experience.",
+        "Proficiency in Python, TensorFlow, or PyTorch.",
+        "Experience with data preprocessing and model evaluation.",
+        "Strong analytical and problem-solving skills."
+      ],
+      "workLocation": "Remote",
+      "note": "Portfolio of ML projects preferred.",
+      "howToApply": "Apply online with resume and project examples."
+    }
+  },
+  {
+    "id": 9,
+    "title": "Cloud Engineer",
+    "type": "IT",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "date": "2025-08-29",
+    "applyLink": "https://www.example.com/apply/cloud-engineer",
+    "details": {
+      "overview": "Design and manage scalable cloud infrastructure for enterprise applications.",
+      "responsibilities": [
+        "Architect and maintain cloud systems.",
+        "Implement security best practices.",
+        "Monitor cloud performance and billing.",
+        "Collaborate with development teams."
+      ],
+      "qualifications": [
+        "2-4 years cloud engineering experience.",
+        "Experience with AWS, Azure, or GCP.",
+        "Strong networking and security knowledge.",
+        "Good problem-solving skills."
+      ],
+      "workLocation": "Remote",
+      "note": "Shortlisted candidates invited for technical interview.",
+      "howToApply": "Submit resume and cloud project details."
+    }
+  },
+  {
+    "id": 10,
+    "title": "Cybersecurity Analyst",
+    "type": "IT",
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+    "date": "2025-08-28",
+    "applyLink": "https://www.example.com/apply/cybersecurity-analyst",
+    "details": {
+      "overview": "Protect systems from cyber threats, conduct monitoring and incident response.",
+      "responsibilities": [
+        "Monitor security threats and incidents.",
+        "Implement security policies and controls.",
+        "Investigate incidents and produce reports.",
+        "Collaborate with IT teams on risk mitigation."
+      ],
+      "qualifications": [
+        "1-3 years cybersecurity experience.",
+        "Knowledge of firewalls, network security, IDS.",
+        "Familiarity with security frameworks.",
+        "Certifications like CISSP, CEH are a plus."
+      ],
+      "workLocation": "Remote or Office",
+      "note": "Certification is a plus.",
+      "howToApply": "Apply with resume and certifications."
+    }
+  }
+]

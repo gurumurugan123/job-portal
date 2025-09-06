@@ -1,0 +1,18 @@
+[
+  {
+    "id": 19,
+    "title": "AI Engineer",
+    "type": "IT",
+    "image": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61",
+    "date": "2025-08-19",
+    "applyLink": "https://www.example.com/apply/ai-engineer"
+  },
+  {
+    "id": 20,
+    "title": "Blockchain Developer",
+    "type": "IT",
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+    "date": "2025-08-18",
+    "applyLink": "https://www.example.com/apply/blockchain-developer"
+  }
+]
