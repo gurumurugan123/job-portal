@@ -26,7 +26,7 @@ function App() {
       <div className="container" style={{ minHeight: '80vh', paddingTop: '1rem' }}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Job" element={<LatestITJobs />} />
+          <Route path="/jobs" element={<LatestITJobs />} />
           <Route path="/job/:id" element={<JobDetails />} />
           <Route path="/world-jobs" element={<WorldJobs />} />
           <Route path="/world-jobs/:id" element={<WorldJobDetails></WorldJobDetails>}/>
