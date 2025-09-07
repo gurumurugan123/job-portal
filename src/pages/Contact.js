@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [errors, setErrors] = useState({});
   const [success, setSuccess] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const validate = () => {
     const errs = {};
@@ -18,12 +20,35 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validate()) {
-      setSuccess("Your message has been sent successfully!");
-      setForm({ name: "", email: "", message: "" });
-      setErrors({});
-      setTimeout(() => setSuccess(""), 4000);
-    }
+    if (!validate()) return;
+
+    setLoading(true);
+
+    emailjs
+      .send(
+        "service_654671r", // ✅ Your Service ID
+        "template_wbv9ltb", // ✅ Your Template ID
+        {
+          name: form.name,
+          email: form.email,
+          message: form.message,
+        },
+        "Fan1lfDM9yVLx3Mam" // 🔑 Replace with your EmailJS Public Key
+      )
+      .then(
+        () => {
+          setSuccess("Your message has been sent successfully!");
+          setForm({ name: "", email: "", message: "" });
+          setErrors({});
+          setLoading(false);
+          setTimeout(() => setSuccess(""), 4000);
+        },
+        (error) => {
+          console.error("EmailJS Error:", error);
+          setSuccess("Failed to send message. Please try again later.");
+          setLoading(false);
+        }
+      );
   };
 
   const onChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
@@ -39,7 +64,6 @@ const Contact = () => {
         boxShadow: "0 6px 18px rgba(0,0,0,0.1)",
       }}
     >
-      {/* Title */}
       <h1
         style={{
           color: "#124170",
@@ -51,12 +75,11 @@ const Contact = () => {
         Contact Us
       </h1>
 
-      {/* Success message */}
       {success && (
         <p
           style={{
             textAlign: "center",
-            color: "green",
+            color: success.includes("Failed") ? "red" : "green",
             fontWeight: "600",
             marginBottom: "20px",
           }}
@@ -65,7 +88,6 @@ const Contact = () => {
         </p>
       )}
 
-      {/* Form */}
       <form
         onSubmit={handleSubmit}
         noValidate
@@ -141,6 +163,7 @@ const Contact = () => {
 
         <button
           type="submit"
+          disabled={loading}
           style={{
             backgroundColor: "#67C090",
             color: "#fff",
@@ -153,14 +176,11 @@ const Contact = () => {
             transition: "all 0.3s ease",
             width: "100%",
           }}
-          onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#26667F")}
-          onMouseOut={(e) => (e.currentTarget.style.backgroundColor = "#67C090")}
         >
-          Send Message
+          {loading ? "Sending..." : "Send Message"}
         </button>
       </form>
 
-      {/* Contact Info */}
       <section
         style={{
           marginTop: "40px",
@@ -169,13 +189,34 @@ const Contact = () => {
         }}
       >
         <h2 style={{ marginBottom: "20px" }}>Get in Touch</h2>
-        <p style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "8px" }}>
+        <p
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "8px",
+          }}
+        >
           <Mail size={18} color="#26667F" /> contact@jobportal.com
         </p>
-        <p style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "8px" }}>
+        <p
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "8px",
+          }}
+        >
           <Phone size={18} color="#26667F" /> +1 234 567 890
         </p>
-        <p style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "8px" }}>
+        <p
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "8px",
+          }}
+        >
           <MapPin size={18} color="#26667F" /> 123 Job Street, Tech City, World
         </p>
       </section>
