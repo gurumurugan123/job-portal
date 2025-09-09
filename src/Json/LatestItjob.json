@@ -121,5 +121,31 @@
     "howToApply": "Apply via Accenture Careers portal."
   }
 }
+,{
+  "id": 5,
+  "title": "Graduate Trainee",
+  "company": "HCLTech",
+  "type": "IT",
+  "image": "/images/HCLTech.png",
+  "date": "2025-09-08",
+  "applyLink": "mailto:Santhakumaran_vijay@hcltech.com,jashima.parvin@hcltech.com,k.sujitha@hcltech.com",
+  "details": {
+    "overview": "HCL Technologies is hiring Graduate Trainees for its Nagpur location. HCLTech is a global technology company headquartered in Noida with offices in 60 countries and over 223,000 employees. The company delivers industry-leading capabilities in digital, engineering, cloud, and AI across multiple industries.",
+    "responsibilities": [
+      "Join as a Graduate Trainee in IT & Information Security roles.",
+      "Collaborate with cross-functional teams and contribute to IT projects.",
+      "Develop professional skills including communication, leadership, and teamwork.",
+      "Support continuous learning and contribute to organizational growth."
+    ],
+    "qualifications": [
+      "Any Graduate (2023–2025 pass outs only).",
+      "Minimum 60% in both 12th and Graduation.",
+      "Eligible regions: Nagpur, Gondia, Aurangabad, Balaghat, Wardha, Jalgaon, Akola, Bhopal, Bhandara, Yavatmal, Indore, Jabalpur, Rewa, Chandrapur, Amravati, Gwalior, Chindwara, Betul."
+    ],
+    "workLocation": "Nagpur, Maharashtra, India",
+    "note": "Candidates are required to share updated profiles and mandatory details (Total experience, Current CTC, Expected CTC, Current location, Native location) via email.",
+    "howToApply": "Send your updated resume to Santhakumaran_vijay@hcltech.com, jashima.parvin@hcltech.com, and k.sujitha@hcltech.com."
+  }
+}
 
 ]

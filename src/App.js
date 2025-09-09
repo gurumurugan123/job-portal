@@ -18,8 +18,10 @@ import LatestNews from './pages/News';
 import WorldJobDetails from './pages/WorldJobDetails';
 import NewsDetails from './pages/NewDetails';
 import ChannelsSection from './pages/Channecsection';
+import useGoogleAnalytics from './Customhook/UseGoogleAnalytics.js'
 
 function App() {
+
   return (
     <Router>
       <Navbar />
@@ -43,6 +45,11 @@ function App() {
       <Footer />
     </Router>
   );
+}
+
+function AnalyticsWrapper() {
+  useGoogleAnalytics();
+  return null; // nothing to render
 }
 
 export default App;
