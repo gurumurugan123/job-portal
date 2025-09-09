@@ -64,7 +64,7 @@ const Navbar = () => {
   {`
     /* General Link Styling */
     .nav-link {
-      font-size: 18px; /* Larger font for desktop */
+      font-size: 15px; /* Larger font for desktop */
       padding: 10px 18px; /* More space around text */
       margin: 0 6px; /* Spacing between links */
       border-radius: 6px;

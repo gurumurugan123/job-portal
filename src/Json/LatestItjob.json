@@ -1,22 +1,125 @@
-[{
-  "id": 1,
-  "title": "Frontend Developer",
+[
+  {
+    "id": 1,
+    "title": "Consultant",
+    "company": "IBM Consulting",
+    "type": "IT",
+    "image": "/images/IBM.jpg",
+    "date": "2025-09-09",
+    "applyLink": "https://ibmglobal.avature.net/en_US/careers/JobDetail?jobId=46439&source=WEB_Search_INDIA",
+    "details": {
+      "overview": "A career in IBM Consulting is rooted in long-term relationships and close collaboration with clients across the globe. You'll work with visionaries across multiple industries to improve the hybrid cloud and AI journey for some of the most innovative companies in the world.",
+      "responsibilities": [
+        "Develop application design and provide guidance to project teams on complex coding and issue resolution.",
+        "Lead the design and construction of new mobile solutions using the latest technologies.",
+        "Strive for continuous improvements by testing build solutions and working in an agile framework.",
+        "Discover and implement the latest technology trends to build creative solutions."
+      ],
+      "qualifications": [
+        "Bachelor's Degree (Required), Master's Degree (Preferred).",
+        "3-5 years of experience in design and automation for application build and deployment.",
+        "Experience with Ansible for deployment automation (e.g., deploying WAR files to Tomcat servers).",
+        "Strong knowledge of Unix/Linux, shell scripting, PowerShell, and YAML.",
+        "Hands-on experience with Jinja templates, Ansible filters, and Windows/Microsoft ecosystem.",
+        "Knowledge of custom Ansible roles and inventory management for multiple environments."
+      ],
+      "workLocation": "Bengaluru, Karnataka, India",
+      "note": "This role is part of IBM Consulting's Client Innovation Center.",
+      "howToApply": "Apply via IBM Careers portal."
+    }
+  },
+  {
+    "id": 2,
+    "title": "Software Engineer II, Infrastructure (Google Cloud)",
+    "company": "Google",
+    "type": "IT",
+    "image": "/images/Google.jpg",
+    "date": "2025-09-09",
+    "applyLink": "https://www.google.com/about/careers/applications/jobs/results/118360042305921734-software-engineer-ii-infrastructure-google-cloud?location=India&q=%22Software%20Engineer%20II%22",
+    "details": {
+      "overview": "Google's software engineers develop next-generation technologies that change how billions of users connect, explore, and interact with information. Our products handle information at massive scale, beyond traditional web search.",
+      "responsibilities": [
+        "Write product or system development code.",
+        "Participate in or lead design reviews with peers and stakeholders.",
+        "Review code to ensure adherence to best practices in style, accuracy, and testability.",
+        "Contribute to documentation and adapt content based on product updates.",
+        "Triage product or system issues and resolve by analyzing impact on hardware, network, or services."
+      ],
+      "qualifications": [
+        "Minimum: Bachelor's degree or equivalent practical experience.",
+        "1+ year experience in software development (Python, C, C++, Java, JavaScript).",
+        "1+ year experience with data structures or algorithms.",
+        "Preferred: Master's/PhD in Computer Science or related field.",
+        "Experience with large-scale infrastructure, distributed systems, storage, or hardware architecture.",
+        "Experience developing accessible technologies."
+      ],
+      "workLocation": "Bengaluru, Karnataka, India",
+      "note": "Full-time role in Google Cloud team.",
+      "howToApply": "Apply via the Google Careers portal."
+    }
+  },
+  {
+    "id": 3,
+    "title": "Software Developer",
+    "company": "Zoho",
+    "type": "IT",
+    "image": "/images/Zoho.png",
+    "date": "2025-09-09",
+    "applyLink": "https://careers.zohocorp.com/jobs/careers/2803000614929615/Software-Developers?source=CareerSite",
+    "details": {
+      "overview": "Design and develop high-volume, low-latency applications for mission-critical systems, delivering high-availability and performance. Contribute to all phases of the development lifecycle: concept, design, build, deploy, test, and release to app stores and support.",
+      "responsibilities": [
+        "Design and develop scalable software solutions.",
+        "Write well-designed, testable, and efficient code.",
+        "Prepare and produce releases of software components.",
+        "Work closely with cross-functional teams for integration.",
+        "Support continuous improvement by exploring alternatives and technologies."
+      ],
+      "qualifications": [
+        "Bachelor's degree in Computer Science or related field.",
+        "Strong programming skills in C, C++, Java, or similar languages.",
+        "Good understanding of OOP principles and data structures.",
+        "Ability to work on multiple projects simultaneously.",
+        "Knowledge of databases and networking basics."
+      ],
+      "workLocation": "Chennai, Tamil Nadu, India",
+      "note": "Full-time role with opportunities for growth.",
+      "howToApply": "Apply via Zoho Careers portal."
+    }
+  },
+  {
+  "id": 4,
+  "title": "Software Product & Platform Engineering Associate",
+  "company": "Accenture",
   "type": "IT",
-  "image": "/images/Zoho.png",
-  "date": "2025-09-06",
-  "applyLink": "https://careers.zohocorp.com/jobs/Careers/2803000614929615/Software-Developers?$apply=true&source=CareerSite&$callback_url=https://www.zoho.com/careers/jobdetails/?job_id=2803000614929615",
+  "image": "/images/Accenture.jpg",
+  "date": "2025-09-09",
+  "applyLink": "https://www.accenture.com/in-en/careers/jobdetails?id=ATCI-5115212-S1892199_en&title=Software+Development+Engineer",
   "details": {
-    "overview": "Design and develop high-volume, low-latency applications for mission-critical systems, ensuring top-tier availability and performance.",
+    "overview": "As a Software Development Engineer, you will engage in a dynamic environment where you will analyze, design, code, and test various components of application code across multiple clients. Your role involves collaborating with teams to deliver high-quality solutions, performing maintenance, and contributing to the development of innovative features.",
     "responsibilities": [
-      "Contribute to all phases of the product development lifecycle.",
-      "Write well-designed, testable, and efficient code.",
-      "Ensure designs comply with specifications.",
-      "Prepare and produce releases of software components.",
-      "Support continuous improvement by investigating alternate technologies and presenting these for architectural review."
+      "Analyze, design, code, and test multiple components of application code.",
+      "Perform maintenance, enhancements, and development work.",
+      "Collaborate with cross-functional teams to gather requirements and provide technical insights.",
+      "Contribute to design and architecture of software components.",
+      "Assist in troubleshooting and debugging issues.",
+      "Participate in problem-solving discussions and code reviews."
     ],
-    "qualifications": [],
-    "workLocation": "Chennai, Salem, Coimbatore, Tirunelveli, and Madurai",
-    "note": "Please note that we have requirements for this role in Chennai, Salem, Coimbatore, Tirunelveli, and Madurai.",
-    "howToApply": "Submit your resume and portfolio online."
+    "qualifications": [
+      "Educational Qualification: 15 years full-time education.",
+      "0–2 years of professional work experience in Embedded C.",
+      "Proficiency in C, C++, and Python (good to have scripting knowledge).",
+      "Experience in ML, AI, Python toolchains, and libraries like Numpy, Scipy, pandas.",
+      "Experience with OpenCV and any microcontroller (ARM/STM32).",
+      "Working knowledge of communication protocols (I2C, RS232, SPI).",
+      "Familiarity with real-time operating systems and Agile/Scrum methodologies.",
+      "Understanding of microcontroller architecture and programming.",
+      "Experience with debugging tools and techniques for embedded systems."
+    ],
+    "workLocation": "Bengaluru, Karnataka, India",
+    "note": "This is a full-time role with 0-2 years of experience required in Embedded C.",
+    "howToApply": "Apply via Accenture Careers portal."
   }
-}]
+}
+
+]
