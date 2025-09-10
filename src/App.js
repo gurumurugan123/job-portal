@@ -19,11 +19,13 @@ import WorldJobDetails from './pages/WorldJobDetails';
 import NewsDetails from './pages/NewDetails';
 import ChannelsSection from './pages/Channecsection';
 import useGoogleAnalytics from './Customhook/UseGoogleAnalytics.js'
+import AnalyticsWrapper from './Customhook/AnalyticsWrapper.js';
 
 function App() {
 
   return (
     <Router>
+    <AnalyticsWrapper/>
       <Navbar />
       <div className="container" style={{ minHeight: '80vh', paddingTop: '1rem' }}>
         <Routes>
@@ -47,9 +49,5 @@ function App() {
   );
 }
 
-function AnalyticsWrapper() {
-  useGoogleAnalytics();
-  return null; // nothing to render
-}
 
 export default App;
