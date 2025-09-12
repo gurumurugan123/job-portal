@@ -146,6 +146,34 @@
     "note": "Candidates are required to share updated profiles and mandatory details (Total experience, Current CTC, Expected CTC, Current location, Native location) via email.",
     "howToApply": "Send your updated resume to Santhakumaran_vijay@hcltech.com, jashima.parvin@hcltech.com, and k.sujitha@hcltech.com."
   }
+},
+{
+  "id": 8,
+  "title": "Web Developers",
+  "company": "Zoho",
+  "type": "IT",
+  "image": "/images/Zoho.png",
+  "date": "2025-09-08",
+  "applyLink": "https://careers.zohocorp.com/jobs/Careers/2803000614913786/Web-Developers?$apply=true&source=CareerSite&$callback_url=https://www.zoho.com/careers/jobdetails/?job_id=2803000614913786",
+  "details": {
+    "overview": "Zoho Corporation is hiring Graduate Trainees for multiple locations across Tamil Nadu. Zoho is a leading global technology company known for its suite of cloud-based business software products and services, empowering organizations worldwide with solutions in CRM, finance, productivity, and collaboration.",
+    "responsibilities": [
+      "Develop new components based on design specifications.",
+      "Work independently and write maintainable code.",
+      "Understand existing code and suggest optimization in terms of functionality and performance.",
+      "Work on client frameworks for caching and develop reusable components."
+    ],
+    "qualifications": [
+      "Any Graduate (2023–2025 pass outs).",
+      "Strong programming knowledge and problem-solving skills.",
+      "Good understanding of software development principles and best practices."
+    ],
+    "workLocation": "Chennai, Salem, Coimbatore, Tirunelveli, Madurai (Tamil Nadu, India)",
+    "note": "Fresh graduates with strong coding skills are encouraged to apply.",
+    "howToApply": "Apply through the Zoho Careers portal at https://careers.zohocorp.com/jobs/Careers"
+  }
 }
+
+
 
 ]
