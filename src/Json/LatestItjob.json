@@ -172,7 +172,62 @@
     "note": "Fresh graduates with strong coding skills are encouraged to apply.",
     "howToApply": "Apply through the Zoho Careers portal at https://careers.zohocorp.com/jobs/Careers"
   }
+},{
+  "id": 9,
+  "title": "Technical Support Engineer",
+  "company": "Zoho Corp",
+  "type": "Technical Support",
+  "image": "/images/zoho.png",
+  "date": "2025-09-16",
+  "applyLink": "https://www.zoho.com/careers/jobdetails/?job_id=2803000614929125",
+  "details": {
+    "overview": "Zoho Corp is hiring Technical Support Engineers to provide voice-based support to international and domestic customers. Zoho is a global software company known for its cloud-based applications for businesses, headquartered in Chennai, India.",
+    "responsibilities": [
+      "Provide voice-based support to international/domestic customers over the phone (Inbound and Outbound).",
+      "Build a rapport with customers through clear and confident communication.",
+      "Focus on customer satisfaction and first-time resolution.",
+      "Engage with the technical team to provide faster resolutions to technical issues.",
+      "Collaborate with the technical content team to identify gaps in the help module."
+    ],
+    "qualifications": [
+      "Should be willing to work night shifts.",
+      "Strong communication skills.",
+      "Problem-solving ability and customer-oriented mindset."
+    ],
+    "workLocation": "Chennai, Salem, Coimbatore, Tirunelveli, Madurai, Tamil Nadu, India",
+    "note": "Candidates must be ready for night shifts and possess excellent communication skills.",
+    "howToApply": "Apply directly via Zoho Careers portal or share your profile through the provided job link."
+  }
+},{
+  "id": 10,
+  "title": "QA Engineer",
+  "company": "Zoho Corp",
+  "type": "Quality Assurance",
+  "image": "/images/zoho.png",
+  "date": "2025-09-16",
+  "applyLink": "https://www.zoho.com/careers/jobdetails/?job_id=2803000614913581",
+  "details": {
+    "overview": "Zoho Corp is hiring QA Engineers with experience in manual and automation testing. The company is known for its cloud-based business applications and offers opportunities to work on high-quality software products in India.",
+    "responsibilities": [
+      "Perform manual and automation testing for software applications.",
+      "Create large datasets and conduct rigorous back-end testing.",
+      "Validate information as it flows through the system.",
+      "Assist developers, support reps, and product managers in debugging issues.",
+      "Re-test and verify bugs/issues that have been fixed."
+    ],
+    "qualifications": [
+      "Experience in Java programming (data types, variables, operators, flow control statements, methods, Exception handling, File Handling, Database Operations, OOPS concepts).",
+      "Experience with MySQL or PgSQL.",
+      "Hands-on experience with Selenium and JMeter.",
+      "Strong analytical and problem-solving skills."
+    ],
+    "workLocation": "Chennai, Salem, Coimbatore, Tirunelveli, Madurai, Tamil Nadu, India",
+    "note": "Candidates should be ready to perform both manual and automated testing and handle large datasets.",
+    "howToApply": "Apply directly via Zoho Careers portal or share your profile through the provided job link."
+  }
 }
+
+
 
 
 
