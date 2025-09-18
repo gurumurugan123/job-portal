@@ -75,15 +75,17 @@ const JobCard = ({ job, goToJobDetails }) => {
 
 const LatestITJobs = () => {
   const navigate = useNavigate();
+  
+  // console.log(jobsData);
+  // Sort jobs by date; newest first (all jobs, not filtered by type)
+const itJobs = [...jobsData].sort((a, b) => {
+  return new Date(b.date) - new Date(a.date);
+});
 
-  // Sort jobs by date; newest first
-  const itJobs = [...jobsData.filter(job => job.type === "IT")].sort((a, b) => {
-    return new Date(b.date) - new Date(a.date);
-  });
 
   const [currentPage, setCurrentPage] = useState(1);
   const totalPages = Math.ceil(itJobs.length / ITEMS_PER_PAGE);
-
+// console.log(totalPages);
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -109,30 +111,32 @@ const LatestITJobs = () => {
       </div>
 
       {/* Pagination */}
-      <nav className="mt-4">
-        <ul className="pagination justify-content-center">
-          {[...Array(totalPages)].map((_, index) => (
-            <li
-              key={index}
-              className={`page-item ${currentPage === index + 1 ? 'active' : ''}`}
-              onClick={() => handlePageChange(index + 1)}
-              style={{ cursor: 'pointer' }}
-            >
-              <span
-                className="page-link"
-                style={{
-                  backgroundColor: currentPage === index + 1 ? '#000000' : '#FFFFFF',
-                  color: currentPage === index + 1 ? '#FFFFFF' : '#000000',
-                  border: '1px solid #000000',
-                  outline: 'none',
-                }}
+      {totalPages > 1 && (
+        <nav className="mt-4">
+          <ul className="pagination justify-content-center">
+            {[...Array(totalPages)].map((_, index) => (
+              <li
+                key={index}
+                className={`page-item ${currentPage === index + 1 ? 'active' : ''}`}
               >
-                {index + 1}
-              </span>
-            </li>
-          ))}
-        </ul>
-      </nav>
+                <button
+                  className="page-link"
+                  onClick={() => handlePageChange(index + 1)}
+                  style={{
+                    backgroundColor: currentPage === index + 1 ? '#000000' : '#FFFFFF',
+                    color: currentPage === index + 1 ? '#FFFFFF' : '#000000',
+                    border: '1px solid #000000',
+                    outline: 'none',
+                    cursor: 'pointer',
+                  }}
+                >
+                  {index + 1}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
 
       {/* Inline CSS for hover zoom */}
       <style>

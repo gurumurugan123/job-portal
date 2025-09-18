@@ -194,108 +194,129 @@ const JobDetails = () => {
 
       {/* Related Jobs */}
       <section style={{ marginTop: "50px" }}>
-        <h3 style={{ color: "#124170", marginBottom: "20px" }}>Related Jobs</h3>
+  <h3 style={{ color: "#124170", marginBottom: "20px" }}>Related Jobs</h3>
 
-        <div
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+      gap: "20px",
+      paddingBottom: "10px",
+    }}
+  >
+    {visibleJobs.map((relJob) => (
+      <div
+        key={relJob.id}
+        style={{
+          background: "#fff",
+          borderRadius: "12px",
+          padding: "15px",
+          boxShadow: "0 4px 12px rgba(38,102,127,0.1)",
+          cursor: "pointer",
+          transition: "transform 0.2s",
+        }}
+        onClick={() => handleRelatedJobClick(relJob.id)}
+        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
+        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
+      >
+        {!loadedImages[relJob.id] && (
+          <div
+            style={{
+              width: "100%",
+              height: "120px",
+              borderRadius: "8px",
+              marginBottom: "10px",
+              backgroundColor: "#e0e0e0",
+              animation: "pulse 1.5s infinite",
+            }}
+          />
+        )}
+        <img
+          src={relJob.image}
+          alt={relJob.title}
+          loading="lazy"
           style={{
-            display: "flex",
-            gap: "70px",
-            overflowX: "auto",
-            paddingBottom: "10px",
+            width: "100%",
+            height: "120px",
+            objectFit: "cover",
+            borderRadius: "8px",
+            marginBottom: "10px",
+            display: loadedImages[relJob.id] ? "block" : "none",
           }}
-        >
-          {visibleJobs.map((relJob) => (
-            <div
-              key={relJob.id}
-              style={{
-                minWidth: "250px",
-                background: "#fff",
-                borderRadius: "12px",
-                padding: "15px",
-                boxShadow: "0 4px 12px rgba(38,102,127,0.1)",
-                cursor: "pointer",
-              }}
-              onClick={() => handleRelatedJobClick(relJob.id)}
-            >
-              {!loadedImages[relJob.id] && (
-                <div
-                  style={{
-                    width: "100%",
-                    height: "120px",
-                    borderRadius: "8px",
-                    marginBottom: "10px",
-                    backgroundColor: "#e0e0e0",
-                    animation: "pulse 1.5s infinite",
-                  }}
-                />
-              )}
-              <img
-                src={relJob.image}
-                alt={relJob.title}
-                loading="lazy"
-                style={{
-                  width: "100%",
-                  height: "120px",
-                  objectFit: "cover",
-                  borderRadius: "8px",
-                  marginBottom: "10px",
-                  display: loadedImages[relJob.id] ? "block" : "none",
-                }}
-                onLoad={() => handleImageLoad(relJob.id)}
-              />
-              <h5 style={{ color: "#26667F" }}>{relJob.title}</h5>
-              <p style={{ fontSize: "14px", color: "#124170" }}>
-                {relJob.details?.workLocation}
-              </p>
-            </div>
-          ))}
-        </div>
+          onLoad={() => handleImageLoad(relJob.id)}
+        />
+        <h5 style={{ color: "#26667F" }}>{relJob.title}</h5>
+        <p style={{ fontSize: "14px", color: "#124170" }}>
+          {relJob.details?.workLocation}
+        </p>
+      </div>
+    ))}
+  </div>
 
-        <div style={{ marginTop: "10px", textAlign: "center" }}>
-          <button
-            onClick={handlePrev}
-            disabled={startIndex === 0}
-            style={{
-              marginRight: "10px",
-              padding: "8px 16px",
-              background: "#67C090",
-              color: "#fff",
-              border: "none",
-              borderRadius: "6px",
-              cursor: startIndex === 0 ? "not-allowed" : "pointer",
-            }}
-          >
-            Prev
-          </button>
-          <button
-            onClick={handleNext}
-            disabled={startIndex + itemsPerPage >= relatedJobs.length}
-            style={{
-              padding: "8px 16px",
-              background: "#67C090",
-              color: "#fff",
-              border: "none",
-              borderRadius: "6px",
-              cursor:
-                startIndex + itemsPerPage >= relatedJobs.length
-                  ? "not-allowed"
-                  : "pointer",
-            }}
-          >
-            Next
-          </button>
-        </div>
+  {/* Prev / Next Buttons */}
+  <div style={{ marginTop: "10px", textAlign: "center" }}>
+    <button
+      onClick={handlePrev}
+      disabled={startIndex === 0}
+      style={{
+        marginRight: "10px",
+        padding: "8px 16px",
+        background: "#67C090",
+        color: "#fff",
+        border: "none",
+        borderRadius: "6px",
+        cursor: startIndex === 0 ? "not-allowed" : "pointer",
+        width: "120px",
+      }}
+    >
+      Prev
+    </button>
+    <button
+      onClick={handleNext}
+      disabled={startIndex + itemsPerPage >= relatedJobs.length}
+      style={{
+        padding: "8px 16px",
+        background: "#67C090",
+        color: "#fff",
+        border: "none",
+        borderRadius: "6px",
+        cursor:
+          startIndex + itemsPerPage >= relatedJobs.length
+            ? "not-allowed"
+            : "pointer",
+        width: "120px",
+      }}
+    >
+      Next
+    </button>
+  </div>
 
-        <style>
-          {`
-            @keyframes pulse {
-              0% { opacity: 1; }
-              50% { opacity: 0.4; }
-              100% { opacity: 1; }
-            }
-          `}
-        </style>
+  <style>
+    {`
+      @keyframes pulse {
+        0% { opacity: 1; }
+        50% { opacity: 0.4; }
+        100% { opacity: 1; }
+      }
+
+      /* Mobile fixes */
+      @media (max-width: 768px) {
+        section h3 {
+          font-size: 18px;
+          text-align: center;
+        }
+        .related-job-card {
+          min-width: 100% !important;
+        }
+        button {
+          width: 100% !important;
+          margin: 5px 0;
+        }
+      }
+    `}
+  </style>
       </section>
+
     </div>
   );
 };
