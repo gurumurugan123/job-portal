@@ -226,6 +226,35 @@
     "howToApply": "Apply directly via Zoho Careers portal or share your profile through the provided job link."
   }
 }
+,{
+  "id": 9,
+  "title": "Developer",
+  "company": "HCLTech",
+  "type": "Developer",
+  "image": "/images/HCLTech.png",
+  "date": "2025-09-26",
+  "applyLink": "https://www.hcltech.com/jobs/developer-2",
+  "details": {
+    "overview": "HCLTech is seeking a Developer with expertise in Deep Learning. As a global technology company, HCLTech delivers capabilities across digital, engineering, cloud, and AI, focusing on industries such as Financial Services, Healthcare, Manufacturing, Telecom, and more. Join us in building sustainable and cutting-edge solutions while accelerating progress for clients and communities worldwide.",
+    "responsibilities": [
+      "Develop and deliver code for assigned projects, ensuring adherence to quality and delivery standards.",
+      "Troubleshoot and resolve issues in existing projects and applications.",
+      "Understand client requirements and develop features accordingly.",
+      "Maintain comprehensive documentation of work."
+    ],
+    "qualifications": [
+      "Primary Skills: Deep Learning",
+      "Secondary Skills: BDD, Automation, AI/ML",
+      "Strong coding and problem-solving skills",
+      "Proven experience in Deep Learning and related technologies",
+      "Familiarity with BDD and automation tools",
+      "Ability to handle complex AI/ML tasks"
+    ],
+    "workLocation": "Chennai, Tamil Nadu, India",
+    "note": "This role requires the development of new features as per client requirements and maintaining the quality of the existing software. HCLTech is committed to achieving net-zero by 2040 and promoting sustainable, inclusive, and responsible technology solutions.",
+    "howToApply": "Apply directly via HCLTech's Careers Portal or share your profile through the provided job link."
+  }
+}
 
 
 
