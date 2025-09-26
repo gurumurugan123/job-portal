@@ -3,22 +3,24 @@ import { FaLinkedinIn, FaWhatsapp, FaTelegramPlane } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
-  const [showModal, setShowModal] = useState(false); // Track the visibility of the modal
-  const [adminCode, setAdminCode] = useState(''); // Track the inputted code
+  const [showModal, setShowModal] = useState(false);
+  const [adminCode, setAdminCode] = useState(''); 
   const navigate = useNavigate();
 
   const handleAdminButtonClick = () => {
-    setShowModal(true); // Show the modal when the Admin button is clicked
+    setShowModal(true);
   };
 
   const handleCloseModal = () => {
-    setShowModal(false); // Close the modal
+    setShowModal(false); 
   };
 
   const handleCodeSubmit = () => {
-    const correctCode = "admin123"; // The correct admin code
+    console.log("clicked");
+    const correctCode = process.env.REACT_APP_ADMINCODE;
+    console.log(correctCode);
     if (adminCode === correctCode) {
-      navigate('/jobManager'); // Navigate to JobManager route
+      navigate('/jobManager'); 
       handleCloseModal(); // Close the modal after successful code entry
     } else {
       alert('Incorrect Code! Please try again.');
