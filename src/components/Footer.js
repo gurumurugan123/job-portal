@@ -16,14 +16,16 @@ const Footer = () => {
   };
 
   const handleCodeSubmit = () => {
-    console.log("clicked");
     const correctCode = process.env.REACT_APP_ADMINCODE;
-    console.log(correctCode);
+
     if (adminCode === correctCode) {
+      setAdminCode('');
       navigate('/jobManager'); 
-      handleCloseModal(); // Close the modal after successful code entry
+      handleCloseModal(); 
+      window.scrollTo(0, 0);
     } else {
       alert('Incorrect Code! Please try again.');
+      setAdminCode('');
     }
   };
 
@@ -31,7 +33,7 @@ const Footer = () => {
     <footer
       style={{
         padding: '2rem',
-        background: 'linear-gradient(135deg, #124170, #26667F)', // navy → teal gradient
+        background: 'linear-gradient(135deg, #124170, #26667F)',
         color: '#fff',
         textAlign: 'center',
         borderRadius: '15px',
