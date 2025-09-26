@@ -20,6 +20,7 @@ import NewsDetails from './pages/NewDetails';
 import ChannelsSection from './pages/Channecsection';
 import useGoogleAnalytics from './Customhook/UseGoogleAnalytics.js'
 import AnalyticsWrapper from './Customhook/AnalyticsWrapper.js';
+import JobManager from './components/JobManager.js';
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/about" element={<About />} />
+          <Route path="/jobManager" element={<JobManager/>}></Route>
         </Routes>
       </div>
       <ChannelsSection/>

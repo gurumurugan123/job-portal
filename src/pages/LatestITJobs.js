@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import jobsData from '../Json/LatestItjob.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { db } from '../Config/FirebaseConfig'; // Firebase config
+import { collection, getDocs } from 'firebase/firestore'; // Firestore functions
+import jobsData from '../Json/LatestItjob.json'; // Local JSON fallback
 
 const ITEMS_PER_PAGE = 6;
 
@@ -75,17 +77,12 @@ const JobCard = ({ job, goToJobDetails }) => {
 
 const LatestITJobs = () => {
   const navigate = useNavigate();
-  
-  // console.log(jobsData);
-  // Sort jobs by date; newest first (all jobs, not filtered by type)
-const itJobs = [...jobsData].sort((a, b) => {
-  return new Date(b.date) - new Date(a.date);
-});
-
-
+  const [jobs, setJobs] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = Math.ceil(itJobs.length / ITEMS_PER_PAGE);
-// console.log(totalPages);
+  const [loading, setLoading] = useState(true);
+
+  const totalPages = Math.ceil(jobs.length / ITEMS_PER_PAGE);
+
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -96,7 +93,27 @@ const itJobs = [...jobsData].sort((a, b) => {
     navigate(`/job/${encryptedId}`);
   };
 
-  const currentJobs = itJobs.slice(
+  // Fetch jobs from Firestore or use local JSON as fallback
+  const fetchJobs = async () => {
+    try {
+      const snapshot = await getDocs(collection(db, 'jobs'));
+      const firebaseJobs = snapshot.docs.map((doc) => doc.data());
+      setJobs(firebaseJobs);
+      setLoading(false);
+      console.log("Fetched jobs from Firebase");
+    } catch (error) {
+      // If Firebase fetch fails, use local JSON data
+      console.log("Firebase fetch failed. Falling back to local JSON.");
+      setJobs(jobsData);
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchJobs();
+  }, []);
+
+  const currentJobs = jobs.slice(
     (currentPage - 1) * ITEMS_PER_PAGE,
     currentPage * ITEMS_PER_PAGE
   );
@@ -104,11 +121,21 @@ const itJobs = [...jobsData].sort((a, b) => {
   return (
     <div className="container my-5" style={{ backgroundColor: '#F5FAE1', minHeight: '100vh' }}>
       <h1 className="mb-4 text-center" style={{ color: '#124170' }}>Latest IT Jobs</h1>
-      <div className="row g-4">
-        {currentJobs.map(job => (
-          <JobCard key={job.id} job={job} goToJobDetails={goToJobDetails} />
-        ))}
-      </div>
+
+      {/* Loader */}
+      {loading ? (
+        <div className="d-flex justify-content-center align-items-center" style={{ height: '300px' }}>
+          <div className="spinner-border text-primary" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      ) : (
+        <div className="row g-4">
+          {currentJobs.map(job => (
+            <JobCard key={job.id} job={job} goToJobDetails={goToJobDetails} />
+          ))}
+        </div>
+      )}
 
       {/* Pagination */}
       {totalPages > 1 && (
